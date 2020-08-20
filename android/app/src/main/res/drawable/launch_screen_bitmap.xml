@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
+  <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:type="radial"
+                android:gradientRadius="100%p"
+                android:endColor="#5300b0"
+                android:startColor="#a758ff"
+            />
+        </shape>
+    </item>
+  
+  <item>
+    <bitmap
+      android:src="@drawable/launch_screen"
+      android:gravity="center"
+      />
+  </item>
+</layer-list>

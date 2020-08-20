@@ -1,0 +1,1115 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* SMSCrawlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SMSCrawlerTests.m */; };
+		13A46DC3CC7A905BB22699E7 /* libPods-SMSCrawler-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E3B57BEF9A124516C8A88D /* libPods-SMSCrawler-tvOS.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		29D4E0B16222E018876FEC39 /* libPods-SMSCrawler-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C8703C2A27FDA25907185E /* libPods-SMSCrawler-tvOSTests.a */; };
+		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* SMSCrawlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SMSCrawlerTests.m */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		B4CEAC9EDB56285298775DA8 /* libPods-SMSCrawler-SMSCrawlerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE7CA823B7B8A22499907A8 /* libPods-SMSCrawler-SMSCrawlerTests.a */; };
+		F5652BA5D2CFC408EB1866EE /* libPods-SMSCrawler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E56B3E17DA8D58BDCD37CD92 /* libPods-SMSCrawler.a */; };
+		900D7D7371D748D0B51CF632 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47B9EEF28E3D46A5997B7EC3 /* AntDesign.ttf */; };
+		865AAECEAED94C9F8D5EED44 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73AA14836C2E4D4CBE992D63 /* Entypo.ttf */; };
+		D3A6A04754224E1B850AD0CB /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBB94B8CE326467E9B3FE9F1 /* EvilIcons.ttf */; };
+		3A2C03B7CF114347980D622B /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57B09EC761C64C64B6A4B0AC /* Feather.ttf */; };
+		D884724571424F3BAD94ECF0 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2C403FD0A44334BDC0C3C7 /* FontAwesome.ttf */; };
+		8646983762AF400C8F292607 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79217EFBA29945B1A6DEDFB8 /* FontAwesome5_Brands.ttf */; };
+		11B2331427284DBEBDB9D011 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E14D62D545824170BF417F4E /* FontAwesome5_Regular.ttf */; };
+		A52AF00730674D35A61EFA20 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2902A01763D4D27B6A58CFF /* FontAwesome5_Solid.ttf */; };
+		BD5043BCF8E7457990CCB4EE /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 441417D9508844B1BA9F6C48 /* Fontisto.ttf */; };
+		71E77ED6FB824527B38F16C6 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21F2A88F791A49F6BC83DF48 /* Foundation.ttf */; };
+		20A126F5AF0144558B9DCF1D /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78293DECAF5244D0A5A95F8A /* Ionicons.ttf */; };
+		F459C71472804187BFB426FA /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA98D291BF1C47E1A48D9AD7 /* MaterialCommunityIcons.ttf */; };
+		C2706CDD04774235BD75581C /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FF02F1AEB264BB5B35A1020 /* MaterialIcons.ttf */; };
+		6435EE933D9D417F98982253 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D5FB737536F45FBAC040F09 /* Octicons.ttf */; };
+		CD06FE83EFD34A05AB9D7EAC /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 071144DFAD5B4843BF6D3590 /* SimpleLineIcons.ttf */; };
+		A176FBBD1BCE46DC85DAFF46 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B642A81E3064281B6D575BC /* Zocial.ttf */; };
+		A19DC797AD1147EBA8FDA022 /* kanit-black.otf in Resources */ = {isa = PBXBuildFile; fileRef = C84BEBBA6B9D46B787D81383 /* kanit-black.otf */; };
+		95B37357110E47ECA48EF962 /* kanit-blackitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A40BF899B28E40489302A353 /* kanit-blackitalic.otf */; };
+		301E3641B19744B183AC3F43 /* kanit-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D639E7753D64CF89B8DB158 /* kanit-bold.otf */; };
+		BB8A08281B3046489740BCD8 /* kanit-bolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE0826C135B84F76A4F23293 /* kanit-bolditalic.otf */; };
+		4B99F3C7AC10483CBEBC9090 /* kanit-extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7535629868C544499B358834 /* kanit-extrabold.otf */; };
+		C8CD1BC5EE4442CA9FA18772 /* kanit-extrabolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC8CC911028142F18EFFA758 /* kanit-extrabolditalic.otf */; };
+		6D22C5804DE14042860BE10B /* kanit-extralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5121A3C0881454FA2EFDD6C /* kanit-extralight.otf */; };
+		9CB3860C077047CF906E276E /* kanit-extralightitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B52138D022DF4B86A516F7A9 /* kanit-extralightitalic.otf */; };
+		A4ECCB3B63314F168D6B766A /* kanit-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7411CE4C8B5840B78A784E40 /* kanit-italic.otf */; };
+		70278BE9571A4B92937FD8FC /* kanit-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B195660E4B040AD9B304845 /* kanit-light.otf */; };
+		B45BBF3800D6430EA58DEE37 /* kanit-lightitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56155FD459664A3594B857DC /* kanit-lightitalic.otf */; };
+		ACEC42D574E4468B83E3304F /* kanit-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 825310143BA94550AD116443 /* kanit-medium.otf */; };
+		E0C5E7AA9FD94412B793F342 /* kanit-mediumitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC31CB8490254676AC4F3A13 /* kanit-mediumitalic.otf */; };
+		F4329249D8A04E73B57B1B33 /* kanit-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 778D8F44839541FCAFC0F2A2 /* kanit-regular.otf */; };
+		C9645F3B69824C1F9B69CBD3 /* kanit-semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78C7C10DD0C446E1998AF1E8 /* kanit-semibold.otf */; };
+		EE4F3AD85554482FB3FA436C /* kanit-semibolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0278DF8051034C8390A8097B /* kanit-semibolditalic.otf */; };
+		8E6F6165E1374962BED76644 /* kanit-thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF3B900C215744258B8EB0A0 /* kanit-thin.otf */; };
+		EB0B09C1E43F41A280D2B502 /* kanit-thinitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D99F631EB0C84F0DAD5A73CE /* kanit-thinitalic.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = SMSCrawler;
+		};
+		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
+			remoteInfo = "SMSCrawler-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* SMSCrawlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSCrawlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* SMSCrawlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSCrawlerTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* SMSCrawler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSCrawler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SMSCrawler/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = SMSCrawler/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SMSCrawler/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SMSCrawler/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SMSCrawler/main.m; sourceTree = "<group>"; };
+		14C8703C2A27FDA25907185E /* libPods-SMSCrawler-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SMSCrawler-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B5D9E3DBECD93B28F37BF18 /* Pods-SMSCrawler-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSCrawler-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-SMSCrawler-tvOS/Pods-SMSCrawler-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* SMSCrawler-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMSCrawler-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* SMSCrawler-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SMSCrawler-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E3B57BEF9A124516C8A88D /* libPods-SMSCrawler-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SMSCrawler-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4399494D6A25103415184910 /* Pods-SMSCrawler-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSCrawler-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-SMSCrawler-tvOSTests/Pods-SMSCrawler-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		5FD688238C4E2E391F12BA11 /* Pods-SMSCrawler-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSCrawler-tvOS.release.xcconfig"; path = "Target Support Files/Pods-SMSCrawler-tvOS/Pods-SMSCrawler-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SMSCrawler/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1BE893D5030729C878B1A4C /* Pods-SMSCrawler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSCrawler.release.xcconfig"; path = "Target Support Files/Pods-SMSCrawler/Pods-SMSCrawler.release.xcconfig"; sourceTree = "<group>"; };
+		D1091BA8313A0BE20B12C481 /* Pods-SMSCrawler-SMSCrawlerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSCrawler-SMSCrawlerTests.release.xcconfig"; path = "Target Support Files/Pods-SMSCrawler-SMSCrawlerTests/Pods-SMSCrawler-SMSCrawlerTests.release.xcconfig"; sourceTree = "<group>"; };
+		DDE7CA823B7B8A22499907A8 /* libPods-SMSCrawler-SMSCrawlerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SMSCrawler-SMSCrawlerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E56B3E17DA8D58BDCD37CD92 /* libPods-SMSCrawler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SMSCrawler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBEF50F8C80AF61E2623A6AF /* Pods-SMSCrawler-SMSCrawlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSCrawler-SMSCrawlerTests.debug.xcconfig"; path = "Target Support Files/Pods-SMSCrawler-SMSCrawlerTests/Pods-SMSCrawler-SMSCrawlerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		EE644667060BA24EEB612720 /* Pods-SMSCrawler-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSCrawler-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-SMSCrawler-tvOSTests/Pods-SMSCrawler-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC6270B8E964DED500FFAC3D /* Pods-SMSCrawler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSCrawler.debug.xcconfig"; path = "Target Support Files/Pods-SMSCrawler/Pods-SMSCrawler.debug.xcconfig"; sourceTree = "<group>"; };
+		47B9EEF28E3D46A5997B7EC3 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		73AA14836C2E4D4CBE992D63 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DBB94B8CE326467E9B3FE9F1 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		57B09EC761C64C64B6A4B0AC /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9A2C403FD0A44334BDC0C3C7 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		79217EFBA29945B1A6DEDFB8 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E14D62D545824170BF417F4E /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E2902A01763D4D27B6A58CFF /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		441417D9508844B1BA9F6C48 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		21F2A88F791A49F6BC83DF48 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		78293DECAF5244D0A5A95F8A /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CA98D291BF1C47E1A48D9AD7 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8FF02F1AEB264BB5B35A1020 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3D5FB737536F45FBAC040F09 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		071144DFAD5B4843BF6D3590 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4B642A81E3064281B6D575BC /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C84BEBBA6B9D46B787D81383 /* kanit-black.otf */ = {isa = PBXFileReference; name = "kanit-black.otf"; path = "../assets/fonts/kanit-black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A40BF899B28E40489302A353 /* kanit-blackitalic.otf */ = {isa = PBXFileReference; name = "kanit-blackitalic.otf"; path = "../assets/fonts/kanit-blackitalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3D639E7753D64CF89B8DB158 /* kanit-bold.otf */ = {isa = PBXFileReference; name = "kanit-bold.otf"; path = "../assets/fonts/kanit-bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AE0826C135B84F76A4F23293 /* kanit-bolditalic.otf */ = {isa = PBXFileReference; name = "kanit-bolditalic.otf"; path = "../assets/fonts/kanit-bolditalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7535629868C544499B358834 /* kanit-extrabold.otf */ = {isa = PBXFileReference; name = "kanit-extrabold.otf"; path = "../assets/fonts/kanit-extrabold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CC8CC911028142F18EFFA758 /* kanit-extrabolditalic.otf */ = {isa = PBXFileReference; name = "kanit-extrabolditalic.otf"; path = "../assets/fonts/kanit-extrabolditalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A5121A3C0881454FA2EFDD6C /* kanit-extralight.otf */ = {isa = PBXFileReference; name = "kanit-extralight.otf"; path = "../assets/fonts/kanit-extralight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B52138D022DF4B86A516F7A9 /* kanit-extralightitalic.otf */ = {isa = PBXFileReference; name = "kanit-extralightitalic.otf"; path = "../assets/fonts/kanit-extralightitalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7411CE4C8B5840B78A784E40 /* kanit-italic.otf */ = {isa = PBXFileReference; name = "kanit-italic.otf"; path = "../assets/fonts/kanit-italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3B195660E4B040AD9B304845 /* kanit-light.otf */ = {isa = PBXFileReference; name = "kanit-light.otf"; path = "../assets/fonts/kanit-light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		56155FD459664A3594B857DC /* kanit-lightitalic.otf */ = {isa = PBXFileReference; name = "kanit-lightitalic.otf"; path = "../assets/fonts/kanit-lightitalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		825310143BA94550AD116443 /* kanit-medium.otf */ = {isa = PBXFileReference; name = "kanit-medium.otf"; path = "../assets/fonts/kanit-medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BC31CB8490254676AC4F3A13 /* kanit-mediumitalic.otf */ = {isa = PBXFileReference; name = "kanit-mediumitalic.otf"; path = "../assets/fonts/kanit-mediumitalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		778D8F44839541FCAFC0F2A2 /* kanit-regular.otf */ = {isa = PBXFileReference; name = "kanit-regular.otf"; path = "../assets/fonts/kanit-regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		78C7C10DD0C446E1998AF1E8 /* kanit-semibold.otf */ = {isa = PBXFileReference; name = "kanit-semibold.otf"; path = "../assets/fonts/kanit-semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0278DF8051034C8390A8097B /* kanit-semibolditalic.otf */ = {isa = PBXFileReference; name = "kanit-semibolditalic.otf"; path = "../assets/fonts/kanit-semibolditalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FF3B900C215744258B8EB0A0 /* kanit-thin.otf */ = {isa = PBXFileReference; name = "kanit-thin.otf"; path = "../assets/fonts/kanit-thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D99F631EB0C84F0DAD5A73CE /* kanit-thinitalic.otf */ = {isa = PBXFileReference; name = "kanit-thinitalic.otf"; path = "../assets/fonts/kanit-thinitalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CEAC9EDB56285298775DA8 /* libPods-SMSCrawler-SMSCrawlerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5652BA5D2CFC408EB1866EE /* libPods-SMSCrawler.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A46DC3CC7A905BB22699E7 /* libPods-SMSCrawler-tvOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29D4E0B16222E018876FEC39 /* libPods-SMSCrawler-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* SMSCrawlerTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* SMSCrawlerTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = SMSCrawlerTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* SMSCrawler */ = {
+			isa = PBXGroup;
+			children = (
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = SMSCrawler;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				E56B3E17DA8D58BDCD37CD92 /* libPods-SMSCrawler.a */,
+				DDE7CA823B7B8A22499907A8 /* libPods-SMSCrawler-SMSCrawlerTests.a */,
+				31E3B57BEF9A124516C8A88D /* libPods-SMSCrawler-tvOS.a */,
+				14C8703C2A27FDA25907185E /* libPods-SMSCrawler-tvOSTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A426D78120310B06E0C790F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC6270B8E964DED500FFAC3D /* Pods-SMSCrawler.debug.xcconfig */,
+				A1BE893D5030729C878B1A4C /* Pods-SMSCrawler.release.xcconfig */,
+				EBEF50F8C80AF61E2623A6AF /* Pods-SMSCrawler-SMSCrawlerTests.debug.xcconfig */,
+				D1091BA8313A0BE20B12C481 /* Pods-SMSCrawler-SMSCrawlerTests.release.xcconfig */,
+				2B5D9E3DBECD93B28F37BF18 /* Pods-SMSCrawler-tvOS.debug.xcconfig */,
+				5FD688238C4E2E391F12BA11 /* Pods-SMSCrawler-tvOS.release.xcconfig */,
+				EE644667060BA24EEB612720 /* Pods-SMSCrawler-tvOSTests.debug.xcconfig */,
+				4399494D6A25103415184910 /* Pods-SMSCrawler-tvOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* SMSCrawler */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* SMSCrawlerTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				6A426D78120310B06E0C790F /* Pods */,
+				9566E0E53AEA48E6A5A421CE /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* SMSCrawler.app */,
+				00E356EE1AD99517003FC87E /* SMSCrawlerTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* SMSCrawler-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* SMSCrawler-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9566E0E53AEA48E6A5A421CE /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				47B9EEF28E3D46A5997B7EC3 /* AntDesign.ttf */,
+				73AA14836C2E4D4CBE992D63 /* Entypo.ttf */,
+				DBB94B8CE326467E9B3FE9F1 /* EvilIcons.ttf */,
+				57B09EC761C64C64B6A4B0AC /* Feather.ttf */,
+				9A2C403FD0A44334BDC0C3C7 /* FontAwesome.ttf */,
+				79217EFBA29945B1A6DEDFB8 /* FontAwesome5_Brands.ttf */,
+				E14D62D545824170BF417F4E /* FontAwesome5_Regular.ttf */,
+				E2902A01763D4D27B6A58CFF /* FontAwesome5_Solid.ttf */,
+				441417D9508844B1BA9F6C48 /* Fontisto.ttf */,
+				21F2A88F791A49F6BC83DF48 /* Foundation.ttf */,
+				78293DECAF5244D0A5A95F8A /* Ionicons.ttf */,
+				CA98D291BF1C47E1A48D9AD7 /* MaterialCommunityIcons.ttf */,
+				8FF02F1AEB264BB5B35A1020 /* MaterialIcons.ttf */,
+				3D5FB737536F45FBAC040F09 /* Octicons.ttf */,
+				071144DFAD5B4843BF6D3590 /* SimpleLineIcons.ttf */,
+				4B642A81E3064281B6D575BC /* Zocial.ttf */,
+				C84BEBBA6B9D46B787D81383 /* kanit-black.otf */,
+				A40BF899B28E40489302A353 /* kanit-blackitalic.otf */,
+				3D639E7753D64CF89B8DB158 /* kanit-bold.otf */,
+				AE0826C135B84F76A4F23293 /* kanit-bolditalic.otf */,
+				7535629868C544499B358834 /* kanit-extrabold.otf */,
+				CC8CC911028142F18EFFA758 /* kanit-extrabolditalic.otf */,
+				A5121A3C0881454FA2EFDD6C /* kanit-extralight.otf */,
+				B52138D022DF4B86A516F7A9 /* kanit-extralightitalic.otf */,
+				7411CE4C8B5840B78A784E40 /* kanit-italic.otf */,
+				3B195660E4B040AD9B304845 /* kanit-light.otf */,
+				56155FD459664A3594B857DC /* kanit-lightitalic.otf */,
+				825310143BA94550AD116443 /* kanit-medium.otf */,
+				BC31CB8490254676AC4F3A13 /* kanit-mediumitalic.otf */,
+				778D8F44839541FCAFC0F2A2 /* kanit-regular.otf */,
+				78C7C10DD0C446E1998AF1E8 /* kanit-semibold.otf */,
+				0278DF8051034C8390A8097B /* kanit-semibolditalic.otf */,
+				FF3B900C215744258B8EB0A0 /* kanit-thin.otf */,
+				D99F631EB0C84F0DAD5A73CE /* kanit-thinitalic.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* SMSCrawlerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SMSCrawlerTests" */;
+			buildPhases = (
+				A72AA877E62FC20258533B81 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				3C18E84BDAF1878122EA23BE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = SMSCrawlerTests;
+			productName = SMSCrawlerTests;
+			productReference = 00E356EE1AD99517003FC87E /* SMSCrawlerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* SMSCrawler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SMSCrawler" */;
+			buildPhases = (
+				5FE8E192635F7910C9E0EB89 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				D86DB8291E6716707A5A0D64 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMSCrawler;
+			productName = SMSCrawler;
+			productReference = 13B07F961A680F5B00A75B9A /* SMSCrawler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E47A1E0B4A5D006451C7 /* SMSCrawler-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "SMSCrawler-tvOS" */;
+			buildPhases = (
+				5737D57C6FD94B1C3AFFBCE9 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F122414F3F0027D42C /* Start Packager */,
+				2D02E4771E0B4A5D006451C7 /* Sources */,
+				2D02E4781E0B4A5D006451C7 /* Frameworks */,
+				2D02E4791E0B4A5D006451C7 /* Resources */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SMSCrawler-tvOS";
+			productName = "SMSCrawler-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* SMSCrawler-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E48F1E0B4A5D006451C7 /* SMSCrawler-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "SMSCrawler-tvOSTests" */;
+			buildPhases = (
+				16172B31D7D790A63DE6BE6C /* [CP] Check Pods Manifest.lock */,
+				2D02E48C1E0B4A5D006451C7 /* Sources */,
+				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
+				2D02E48E1E0B4A5D006451C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+			);
+			name = "SMSCrawler-tvOSTests";
+			productName = "SMSCrawler-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* SMSCrawler-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "SMSCrawler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* SMSCrawler */,
+				00E356ED1AD99517003FC87E /* SMSCrawlerTests */,
+				2D02E47A1E0B4A5D006451C7 /* SMSCrawler-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* SMSCrawler-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				900D7D7371D748D0B51CF632 /* AntDesign.ttf in Resources */,
+				865AAECEAED94C9F8D5EED44 /* Entypo.ttf in Resources */,
+				D3A6A04754224E1B850AD0CB /* EvilIcons.ttf in Resources */,
+				3A2C03B7CF114347980D622B /* Feather.ttf in Resources */,
+				D884724571424F3BAD94ECF0 /* FontAwesome.ttf in Resources */,
+				8646983762AF400C8F292607 /* FontAwesome5_Brands.ttf in Resources */,
+				11B2331427284DBEBDB9D011 /* FontAwesome5_Regular.ttf in Resources */,
+				A52AF00730674D35A61EFA20 /* FontAwesome5_Solid.ttf in Resources */,
+				BD5043BCF8E7457990CCB4EE /* Fontisto.ttf in Resources */,
+				71E77ED6FB824527B38F16C6 /* Foundation.ttf in Resources */,
+				20A126F5AF0144558B9DCF1D /* Ionicons.ttf in Resources */,
+				F459C71472804187BFB426FA /* MaterialCommunityIcons.ttf in Resources */,
+				C2706CDD04774235BD75581C /* MaterialIcons.ttf in Resources */,
+				6435EE933D9D417F98982253 /* Octicons.ttf in Resources */,
+				CD06FE83EFD34A05AB9D7EAC /* SimpleLineIcons.ttf in Resources */,
+				A176FBBD1BCE46DC85DAFF46 /* Zocial.ttf in Resources */,
+				A19DC797AD1147EBA8FDA022 /* kanit-black.otf in Resources */,
+				95B37357110E47ECA48EF962 /* kanit-blackitalic.otf in Resources */,
+				301E3641B19744B183AC3F43 /* kanit-bold.otf in Resources */,
+				BB8A08281B3046489740BCD8 /* kanit-bolditalic.otf in Resources */,
+				4B99F3C7AC10483CBEBC9090 /* kanit-extrabold.otf in Resources */,
+				C8CD1BC5EE4442CA9FA18772 /* kanit-extrabolditalic.otf in Resources */,
+				6D22C5804DE14042860BE10B /* kanit-extralight.otf in Resources */,
+				9CB3860C077047CF906E276E /* kanit-extralightitalic.otf in Resources */,
+				A4ECCB3B63314F168D6B766A /* kanit-italic.otf in Resources */,
+				70278BE9571A4B92937FD8FC /* kanit-light.otf in Resources */,
+				B45BBF3800D6430EA58DEE37 /* kanit-lightitalic.otf in Resources */,
+				ACEC42D574E4468B83E3304F /* kanit-medium.otf in Resources */,
+				E0C5E7AA9FD94412B793F342 /* kanit-mediumitalic.otf in Resources */,
+				F4329249D8A04E73B57B1B33 /* kanit-regular.otf in Resources */,
+				C9645F3B69824C1F9B69CBD3 /* kanit-semibold.otf in Resources */,
+				EE4F3AD85554482FB3FA436C /* kanit-semibolditalic.otf in Resources */,
+				8E6F6165E1374962BED76644 /* kanit-thin.otf in Resources */,
+				EB0B09C1E43F41A280D2B502 /* kanit-thinitalic.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4791E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		16172B31D7D790A63DE6BE6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMSCrawler-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		3C18E84BDAF1878122EA23BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SMSCrawler-SMSCrawlerTests/Pods-SMSCrawler-SMSCrawlerTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SMSCrawler-SMSCrawlerTests/Pods-SMSCrawler-SMSCrawlerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5737D57C6FD94B1C3AFFBCE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMSCrawler-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FE8E192635F7910C9E0EB89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMSCrawler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A72AA877E62FC20258533B81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMSCrawler-SMSCrawlerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D86DB8291E6716707A5A0D64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SMSCrawler/Pods-SMSCrawler-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SMSCrawler/Pods-SMSCrawler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F122414F3F0027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* SMSCrawlerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4771E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD954D1E0B4F2C00145EB5 /* SMSCrawlerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* SMSCrawler */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02E47A1E0B4A5D006451C7 /* SMSCrawler-tvOS */;
+			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBEF50F8C80AF61E2623A6AF /* Pods-SMSCrawler-SMSCrawlerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SMSCrawlerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSCrawler.app/SMSCrawler";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1091BA8313A0BE20B12C481 /* Pods-SMSCrawler-SMSCrawlerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = SMSCrawlerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSCrawler.app/SMSCrawler";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC6270B8E964DED500FFAC3D /* Pods-SMSCrawler.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SMSCrawler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = SMSCrawler;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1BE893D5030729C878B1A4C /* Pods-SMSCrawler.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = SMSCrawler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = SMSCrawler;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2D02E4971E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B5D9E3DBECD93B28F37BF18 /* Pods-SMSCrawler-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SMSCrawler-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.SMSCrawler-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		2D02E4981E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD688238C4E2E391F12BA11 /* Pods-SMSCrawler-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SMSCrawler-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.SMSCrawler-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		2D02E4991E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE644667060BA24EEB612720 /* Pods-SMSCrawler-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SMSCrawler-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.SMSCrawler-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSCrawler-tvOS.app/SMSCrawler-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2D02E49A1E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4399494D6A25103415184910 /* Pods-SMSCrawler-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SMSCrawler-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.SMSCrawler-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSCrawler-tvOS.app/SMSCrawler-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SMSCrawlerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SMSCrawler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "SMSCrawler-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4971E0B4A5E006451C7 /* Debug */,
+				2D02E4981E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "SMSCrawler-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4991E0B4A5E006451C7 /* Debug */,
+				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "SMSCrawler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

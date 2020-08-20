@@ -1,0 +1,26 @@
+{
+    "heading": "SMS TOOLKIT",
+    "input": {
+        "apiTitle": "API",
+        "keywordTitle": "Keyword"
+    },
+    "submitTitle": "START",
+    "help": {
+        "title": "Instruction",
+        "note1": "* The app works only when it's in activative mode.",
+        "note2": "* You need to grant permission to receive sms to be able to use the functions of the app.",
+        "contentTitle": "How it works?",
+        "content1": "The app will catch the sms sent to your device, filter it by `Keyword` (text or regex) and then send it to the `API` (you entered).",
+        "content2": "--- API config ---",
+        "content3": "** method: \"POST\"",
+        "content4": "** param: { message }"
+    },
+    "modal": {
+        "protocols": {
+            "title": "Protocols"
+        },
+        "regexFlags": {
+            "title": "Regex flags"
+        }
+    }
+}
