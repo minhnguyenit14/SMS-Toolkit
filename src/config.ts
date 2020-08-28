@@ -1,4 +1,7 @@
+import DeviceInfo from 'react-native-device-info';
+
 const config = {
+    version: DeviceInfo.getVersion(),
     asyncStorageKey: '423buv290vfui_fi38mimo',
     colors: {
         primary: '#f2dc5b',

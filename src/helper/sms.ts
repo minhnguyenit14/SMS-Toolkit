@@ -34,7 +34,7 @@ const callAPIFilteredByKeyword = (
     onFinally: Function = () => { }
 ) => {
     if (sms.body.includes(keyword)) {
-        executeAPIByScript(api, sms.body, getCancelable, onSuccess, onFail, onFinally);
+        executeAPIByScript(api, sms.originatingAddress, sms.body, getCancelable, onSuccess, onFail, onFinally);
     }
 };
 
@@ -50,12 +50,13 @@ const callAPIFilteredByRegex = (
 ) => {
     const regex = new RegExp(regexString, regexFlag);
     if (sms.body.match(regex)) {
-        executeAPIByScript(api, sms.body, getCancelable, onSuccess, onFail, onFinally);
+        executeAPIByScript(api, sms.originatingAddress, sms.body, getCancelable, onSuccess, onFail, onFinally);
     }
 }
 
 const executeAPIByScript = async (
     api: string,
+    originatingAddress: string,
     message: string,
     getCancelable: Function,
     onSuccess: Function = () => { },
@@ -63,7 +64,11 @@ const executeAPIByScript = async (
     onFinally: Function = () => { }
 ) => {
     try {
-        const { cancel, promise } = post(api, { message });
+        const data = {
+            phoneNumber: originatingAddress,
+            message,
+        }
+        const { cancel, promise } = post(api, data);
         getCancelable(cancel);
         const response = await promise();
 

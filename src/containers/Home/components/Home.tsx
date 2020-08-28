@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet, View, Dimensions } from 'react-native';
-import { Heading1, Loading, Input, Button, Heading3 } from '@components';
+import { Heading1, Loading, Input, Button, Heading3, Title } from '@components';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import config from '@config';
 import { APP_STYLES } from '@constants';
@@ -41,10 +41,18 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         padding: 15
     },
+    headingContainer: {
+        marginTop: '20%',
+        marginBottom: 50,
+        alignItems: 'center'
+    },
+    version: {
+        marginTop: 5,
+        color: '#999',
+        letterSpacing: 1
+    },
     heading: {
         textAlign: 'center',
-        marginTop: '20%',
-        marginBottom: 45
     },
     heading_s1: {
         color: config.colors.logo.sub1
@@ -168,13 +176,18 @@ const Home = ({
                     >
                         <Icon name="question-circle" style={styles.helpIcon} />
                     </Button>
-                    <Heading1
-                        style={styles.heading}
-                    >
-                        <Heading1 style={styles.heading_s1}>S</Heading1>
-                        <Heading1 style={styles.heading_m}>M</Heading1>
-                        <Heading1 style={styles.heading_s2}>S</Heading1> TOOLKIT
-                    </Heading1>
+
+                    <View style={styles.headingContainer}>
+                        <Heading1
+                            style={styles.heading}
+                        >
+                            <Heading1 style={styles.heading_s1}>S</Heading1>
+                            <Heading1 style={styles.heading_m}>M</Heading1>
+                            <Heading1 style={styles.heading_s2}>S</Heading1> TOOLKIT
+                        </Heading1>
+                        <Title style={styles.version}>{config.version}</Title>
+                    </View>
+
                     <Input
                         autoCapitalize='none'
                         label={message.input.apiTitle}
