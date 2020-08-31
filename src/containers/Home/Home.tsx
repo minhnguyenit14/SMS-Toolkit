@@ -25,7 +25,14 @@ const Home = ({ navigation, route }: ScreenOptions) => {
     const [executingMessageType, setExecutingMessageType] = useState<ExecutingNotiType>("");
 
     const [isSmsPremissionGranted, setSmsPremissionGranted] = useState(false);
-    const [config, setConfig] = useState({ api: "", keyword: "", minDate: 0, filterType: FilterType.keyword, regexFlags: [regexFlagType.global], protocol: WEB_PROTOCOLS.HTTPS });
+    const [config, setConfig] = useState({
+        api: "",
+        keyword: "",
+        minDate: 0,
+        filterType: FilterType.keyword,
+        regexFlags: [regexFlagType.global],
+        protocol: WEB_PROTOCOLS.HTTPS
+    });
 
     useEffect(() => {
         // getSms();

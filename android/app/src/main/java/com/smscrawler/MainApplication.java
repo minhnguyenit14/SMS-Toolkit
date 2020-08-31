@@ -9,7 +9,6 @@ import com.levelasquez.androidopensettings.AndroidOpenSettingsPackage;
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 import com.swmansion.reanimated.ReanimatedPackage;
-import com.transistorsoft.rnbackgroundfetch.RNBackgroundFetchPackage;
 import com.centaurwarchief.smslistener.SmsListenerPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.react.SmsPackage;
