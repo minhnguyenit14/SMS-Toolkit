@@ -138,7 +138,7 @@ const Home = ({ navigation, route }: ScreenOptions) => {
     function handleFinallyExecutingMessage() {
         setTimeout(() => {
             setExecutingMessage(false);
-        }, 1500);
+        }, 3000);
 
     }
 

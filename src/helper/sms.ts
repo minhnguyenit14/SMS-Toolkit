@@ -54,7 +54,7 @@ const callAPIFilteredByRegex = (
     }
 }
 
-const executeAPIByScript = async (
+export const executeAPIByScript = async (
     api: string,
     originatingAddress: string,
     message: string,
@@ -75,6 +75,11 @@ const executeAPIByScript = async (
         if (response && response.status === HTTP_STATUS.SUCCESS) {
             logger("executeAPIByScript")(response, api, message);
             onSuccess(message);
+            showFlashMessage({
+                type: 'success',
+                message: JSON.stringify(response.data),
+                duration: 3000
+            })
         } else {
             loggerError("executeAPIByScript")(response);
             onFail(message);

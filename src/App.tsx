@@ -11,14 +11,12 @@ import {
   StyleSheet,
   StatusBar,
   View,
-  Dimensions,
-  ImageBackground
+  Text
 } from 'react-native';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import RootStackScreen from './navigation';
 import { FlashMessage } from './helper';
-import config from '@config';
 
 const styles = StyleSheet.create({
   container: {
@@ -35,11 +33,11 @@ const App = () => {
         <RootStackScreen />
       </View>
       {
-        //
-        //@ts-ignore
         <FlashMessage
+          // @ts-ignore
           icon="auto"
           position="bottom"
+          titleProps={{ numberOfLines: 5 }}
         />
       }
     </NavigationContainer>

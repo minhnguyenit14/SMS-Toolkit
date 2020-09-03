@@ -2,6 +2,13 @@ import axios, { AxiosResponse, AxiosError } from 'axios';
 import { showFlashMessage } from '@helper/flashMessage';
 const CancelToken = axios.CancelToken;
 
+const formatRequestData = (data: any) => {
+    let request = [];
+    for (let d in data)
+        request.push(d + '=' + data[d]);
+    return request.join('&');
+};
+
 const get = (api: string) => {
     const cancelInstance = CancelToken.source();
 
@@ -20,7 +27,7 @@ const post = (api: string, data: Object) => {
     return {
         cancel: () => cancelInstance.cancel(),
         promise: () => axios
-            .post(api, data)
+            .post(api, formatRequestData(data))
             .then(response => handleResponse(response))
             .catch(error => handleError(error, api, data))
     }
