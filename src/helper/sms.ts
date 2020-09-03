@@ -29,11 +29,13 @@ const callAPIFilteredByKeyword = (
     keyword: string,
     sms: ReceivedSmsMessage,
     getCancelable: Function,
+    onPreExecuteAPI: Function = () => { },
     onSuccess: Function = () => { },
     onFail: Function = () => { },
     onFinally: Function = () => { }
 ) => {
     if (sms.body.includes(keyword)) {
+        onPreExecuteAPI();
         executeAPIByScript(api, sms.originatingAddress, sms.body, getCancelable, onSuccess, onFail, onFinally);
     }
 };
@@ -44,12 +46,14 @@ const callAPIFilteredByRegex = (
     regexFlag: string,
     sms: ReceivedSmsMessage,
     getCancelable: Function,
+    onPreExecuteAPI: Function = () => { },
     onSuccess: Function = () => { },
     onFail: Function = () => { },
     onFinally: Function = () => { }
 ) => {
     const regex = new RegExp(regexString, regexFlag);
     if (sms.body.match(regex)) {
+        onPreExecuteAPI();
         executeAPIByScript(api, sms.originatingAddress, sms.body, getCancelable, onSuccess, onFail, onFinally);
     }
 }

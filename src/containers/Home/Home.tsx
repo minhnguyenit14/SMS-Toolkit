@@ -82,8 +82,6 @@ const Home = ({ navigation, route }: ScreenOptions) => {
         smsListener && smsListener.remove();
         const listener = SmsListener.addListener(async (message: ReceivedSmsMessage) => {
             setPostedMessage("");
-            setExecutingMessageType("loading");
-            setExecutingMessage(true);
             switch (config.filterType) {
                 case FilterType.keyword:
                     callAPIFilteredByKeyword(
@@ -91,6 +89,7 @@ const Home = ({ navigation, route }: ScreenOptions) => {
                         config.keyword,
                         message,
                         handleCancelable,
+                        handlePreExecuteAPI,
                         handleSuccessExecutingMessage,
                         handleFailExecutingMessage,
                         handleFinallyExecutingMessage
@@ -103,6 +102,7 @@ const Home = ({ navigation, route }: ScreenOptions) => {
                         config.regexFlags.join(""),
                         message,
                         handleCancelable,
+                        handlePreExecuteAPI,
                         handleSuccessExecutingMessage,
                         handleFailExecutingMessage,
                         handleFinallyExecutingMessage
@@ -110,8 +110,8 @@ const Home = ({ navigation, route }: ScreenOptions) => {
                     break;
             }
             console.log(message);
-            setSmsListener(listener);
         });
+        setSmsListener(listener);
     }
 
     function handleCancelable(cancel: Function) {
@@ -123,6 +123,11 @@ const Home = ({ navigation, route }: ScreenOptions) => {
     function stopAllCancelable() {
         canceler.forEach(cancel => cancel());
         setCanceler([]);
+    }
+
+    function handlePreExecuteAPI() {
+        setExecutingMessageType("loading");
+        setExecutingMessage(true);
     }
 
     function handleSuccessExecutingMessage(mess: string) {
@@ -139,7 +144,6 @@ const Home = ({ navigation, route }: ScreenOptions) => {
         setTimeout(() => {
             setExecutingMessage(false);
         }, 3000);
-
     }
 
     function handleChangeAPI(api: string) {
