@@ -95,7 +95,6 @@ const Input = ({
             <View style={[styles.inputContainer, inputContainerStyle]}>
                 {leftInput}
                 <TextInput
-                    selectTextOnFocus
                     selectionColor={config.colors.logo.sub3}
                     {...props}
                     onChangeText={handleChangeText}

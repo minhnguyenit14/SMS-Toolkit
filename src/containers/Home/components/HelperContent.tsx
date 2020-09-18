@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { SubTitle, BodyText, Title } from '@components';
+import { BodyText, Title } from '@components';
 import Description from '@components/Typography/Description';
 
 export interface Content {

@@ -28,6 +28,7 @@ const Home = ({ navigation, route }: ScreenOptions) => {
     const [config, setConfig] = useState({
         api: "",
         keyword: "",
+        secretKey: "",
         minDate: 0,
         filterType: FilterType.keyword,
         regexFlags: [regexFlagType.global],
@@ -88,6 +89,7 @@ const Home = ({ navigation, route }: ScreenOptions) => {
                         getAPI(),
                         config.keyword,
                         message,
+                        config.secretKey,
                         handleCancelable,
                         handlePreExecuteAPI,
                         handleSuccessExecutingMessage,
@@ -101,6 +103,7 @@ const Home = ({ navigation, route }: ScreenOptions) => {
                         config.keyword,
                         config.regexFlags.join(""),
                         message,
+                        config.secretKey,
                         handleCancelable,
                         handlePreExecuteAPI,
                         handleSuccessExecutingMessage,
@@ -158,6 +161,13 @@ const Home = ({ navigation, route }: ScreenOptions) => {
         setConfig({
             ...config,
             keyword
+        });
+    }
+
+    function handleChangeSecretKey(secretKey: string) {
+        setConfig({
+            ...config,
+            secretKey
         });
     }
 
@@ -275,6 +285,7 @@ const Home = ({ navigation, route }: ScreenOptions) => {
         }
         if (isSmsPremissionGranted) {
             if (!isRunning) {
+                handleSaveConfig();
                 startSmsListener();
             } else {
                 smsListener && smsListener.remove();
@@ -307,6 +318,7 @@ const Home = ({ navigation, route }: ScreenOptions) => {
         <HomeComponent
             onChangeTextAPI={handleChangeAPI}
             onChangeTextKeyword={handleChangeKeyword}
+            onChangeTextSecretKey={handleChangeSecretKey}
             onPressProtocol={openProtocolSelector}
             onPressRegexFlag={openRegexFlagSelector}
             onPressFilterType={openFilterTypeSelector}
@@ -315,6 +327,7 @@ const Home = ({ navigation, route }: ScreenOptions) => {
             onSubmit={handleSubmit}
             api={config.api}
             keyword={config.keyword}
+            secretKey={config.secretKey}
             protocol={config.protocol}
             filterType={config.filterType}
             regexFlags={config.regexFlags}

@@ -2,7 +2,8 @@
     "heading": "SMS TOOLKIT",
     "input": {
         "apiTitle": "API",
-        "keywordTitle": "Keyword"
+        "keywordTitle": "Keyword",
+        "secretKeyTitle": "Secret key"
     },
     "submitTitle": "START",
     "help": {
@@ -10,10 +11,10 @@
         "note1": "* The app works only when it's in activative mode.",
         "note2": "* You need to grant permission to receive sms to be able to use the functions of the app.",
         "contentTitle": "How it works?",
-        "content1": "The app will catch the sms sent to your device, filter it by `Keyword` (text or regex) and then send it to the `API` (you entered).",
-        "content2": "--- API config ---",
+        "content1": "--- TODOS --- \n\t• Catch the sms sent to your device. \n\t• Filter it by `Keyword` (text or regex). \n\t• If matched, the app will grab your device_id and continue or it will ignore the sms. \n\t• Create a `signature` by using MD5 with device_id, sms content, phone_number, `Secret key` to hash your data. \n\t• Send all the params to the `API` (you entered).",
+        "content2": "\n--- API CONFIG ---",
         "content3": "** method: \"POST\"",
-        "content4": "** param: { phoneNumber, message }"
+        "content4": "** param: { \n\t\tdevice_id, \n\t\tphone_number, \n\t\tmessage, \n\t\tsignature \n\t }"
     },
     "modal": {
         "protocols": {

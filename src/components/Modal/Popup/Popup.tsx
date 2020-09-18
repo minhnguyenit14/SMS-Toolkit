@@ -3,7 +3,8 @@ import {
     View,
     StyleSheet,
     TouchableWithoutFeedback,
-    Modal as ModalRN
+    Modal as ModalRN,
+    ScrollView
 } from 'react-native';
 import { PopupProps } from '.';
 import Button, { ButtonType } from '../../Button';
@@ -12,7 +13,7 @@ import { Heading2, BodyText } from '../../Typography';
 const styles = StyleSheet.create({
     wrapper: {
         width: '100%',
-        height: '100%'
+        height: '100%',
     },
     background: {
         backgroundColor: 'rgba(0,0,0,.6)'
@@ -24,15 +25,18 @@ const styles = StyleSheet.create({
     modal: {
         justifyContent: 'center',
         width: '90%',
+        maxHeight: '80%',
         backgroundColor: 'white',
         borderRadius: 15,
-        padding: 15
+        padding: 15,
+        overflow: 'hidden'
     },
     container: {
-        alignItems: 'center'
+        alignItems: 'center',
     },
     textContainer: {
-        width: '100%'
+        width: '100%',
+        height: '80%'
     },
     title: {
         fontSize: 22,
@@ -49,7 +53,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end',
         alignItems: 'center',
         alignSelf: 'flex-end',
-        marginTop: 40
+        marginTop: 40,
     },
     btn: {
         paddingVertical: 10,
@@ -88,8 +92,9 @@ const Popup = ({
             onRequestClose={onRequestClose}
         >
             <TouchableWithoutFeedback
+                disabled={!pressToHide}
                 style={styles.wrapper}
-                onPress={pressToHide ? onRequestClose : () => { }}
+                onPress={onRequestClose}
             >
                 <View style={[styles.wrapper, styles.fullCenter, styles.background]}>
                     <View style={styles.modal}>
@@ -98,9 +103,11 @@ const Popup = ({
                                 <Heading2 style={[styles.title, titleStyle]}>
                                     {title}
                                 </Heading2>
-                                {renderContent || <BodyText style={[styles.content, contentStyle]}>
-                                    {content}
-                                </BodyText>}
+                                <ScrollView persistentScrollbar>
+                                    {renderContent || <BodyText style={[styles.content, contentStyle]}>
+                                        {content}
+                                    </BodyText>}
+                                </ScrollView>
                             </View>
 
                             <View style={styles.footer}>

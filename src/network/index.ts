@@ -27,7 +27,7 @@ const post = (api: string, data: Object) => {
     return {
         cancel: () => cancelInstance.cancel(),
         promise: () => axios
-            .post(api, formatRequestData(data))
+            .post(api, data)
             .then(response => handleResponse(response))
             .catch(error => handleError(error, api, data))
     }

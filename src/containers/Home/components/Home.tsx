@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet, View, Dimensions } from 'react-native';
-import { Heading1, Loading, Input, Button, Heading3, Title } from '@components';
+import { Heading1, Loading, Input, Button, Heading3, Title, SubTitle } from '@components';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import config from '@config';
 import { APP_STYLES } from '@constants';
@@ -18,6 +18,7 @@ const { width: appWidth, height: appHeight } = Dimensions.get('screen');
 export interface HomeComponentProps {
     onChangeTextAPI: (api: string) => void,
     onChangeTextKeyword: (keyword: string) => void,
+    onChangeTextSecretKey: (secretKey: string) => void,
     onPressProtocol: () => void,
     onPressRegexFlag: () => void,
     onPressFilterType: (filterType: FilterType) => void,
@@ -28,6 +29,7 @@ export interface HomeComponentProps {
     api: string,
     keyword: string,
     protocol: string,
+    secretKey: string,
     filterType: FilterType,
     regexFlags: Array<RegexFlagType>,
     isRunning?: boolean,
@@ -36,14 +38,34 @@ export interface HomeComponentProps {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 15
+    },
     content: {
         flexGrow: 1,
         justifyContent: 'space-between',
-        padding: 15
+        marginBottom: 15
+    },
+    copyrightContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    copyrightTxt: {
+        backgroundColor: '#eaeaea',
+        borderTopRightRadius: 5,
+        borderBottomRightRadius: 5,
+        paddingHorizontal: 15,
+        paddingVertical: 2,
+        marginLeft: -15,
+        color: '#bbb',
+        fontSize: 14,
+        letterSpacing: .5
     },
     headingContainer: {
-        marginTop: '20%',
-        marginBottom: 50,
+        marginTop: '5%',
+        marginBottom: '5%',
         alignItems: 'center'
     },
     version: {
@@ -75,14 +97,10 @@ const styles = StyleSheet.create({
     },
     btn: {
         flex: 1,
-        borderTopRightRadius: 0,
-        borderBottomRightRadius: 0,
     },
     helpContainer: {
         backgroundColor: 'transparent',
         padding: 0,
-        position: 'absolute',
-        right: 5
     },
     helpIcon: {
         fontSize: 26,
@@ -100,16 +118,17 @@ const styles = StyleSheet.create({
     },
     loadingContainer: {
         ...APP_STYLES.rowContainer,
-        flex: 1,
         alignItems: 'center',
     },
     loading: {
         position: 'absolute'
     },
-    loadingLabel: {
+    submitLabel: {
         textAlign: 'center',
-        flex: 1,
         color: config.colors.logo.background
+    },
+    loadingLabel: {
+        flex: 1,
     },
     runningMask: {
         backgroundColor: 'rgba(0,0,0,.4)',
@@ -122,6 +141,7 @@ const styles = StyleSheet.create({
 const Home = ({
     onChangeTextAPI,
     onChangeTextKeyword,
+    onChangeTextSecretKey,
     onPressProtocol,
     onPressRegexFlag,
     onPressFilterType,
@@ -131,6 +151,7 @@ const Home = ({
     postedMesssage,
     api,
     keyword,
+    secretKey,
     protocol,
     filterType,
     regexFlags,
@@ -163,12 +184,9 @@ const Home = ({
 
     return (
         <>
-            <ScrollView
-                contentContainerStyle={[styles.content]}
-                keyboardDismissMode="interactive"
-                keyboardShouldPersistTaps="handled"
-            >
-                <View>
+            <View style={styles.container}>
+                <View style={styles.copyrightContainer}>
+                    <SubTitle style={styles.copyrightTxt}>Powered by ABAHA.vn</SubTitle>
                     <Button
                         touchableOpacity
                         containerStyle={styles.helpContainer}
@@ -176,18 +194,24 @@ const Home = ({
                     >
                         <Icon name="question-circle" style={styles.helpIcon} />
                     </Button>
+                </View>
 
-                    <View style={styles.headingContainer}>
-                        <Heading1
-                            style={styles.heading}
-                        >
-                            <Heading1 style={styles.heading_s1}>S</Heading1>
-                            <Heading1 style={styles.heading_m}>M</Heading1>
-                            <Heading1 style={styles.heading_s2}>S</Heading1> TOOLKIT
+                <View style={styles.headingContainer}>
+                    <Heading1
+                        style={styles.heading}
+                    >
+                        <Heading1 style={styles.heading_s1}>S</Heading1>
+                        <Heading1 style={styles.heading_m}>M</Heading1>
+                        <Heading1 style={styles.heading_s2}>S</Heading1> TOOLKIT
                         </Heading1>
-                        <Title style={styles.version}>{config.version}</Title>
-                    </View>
+                    <Title style={styles.version}>{config.version}</Title>
+                </View>
 
+                <ScrollView
+                    contentContainerStyle={[styles.content]}
+                    keyboardDismissMode="interactive"
+                    keyboardShouldPersistTaps="handled"
+                >
                     <Input
                         autoCapitalize='none'
                         label={message.input.apiTitle}
@@ -214,7 +238,17 @@ const Home = ({
                         onChangeText={onChangeTextKeyword}
                         value={keyword}
                     />
-                </View>
+                    <Input
+                        autoCapitalize='none'
+                        secureTextEntry
+                        label={message.input.secretKeyTitle}
+                        labelContainerStyle={styles.inputKeywordsLabelContainer}
+                        inputContainerStyle={[styles.input, styles.inputKeywords]}
+                        onChangeText={onChangeTextSecretKey}
+                        value={secretKey}
+                    />
+                </ScrollView>
+
                 {isRunning && <View style={styles.runningMask} />}
                 <View style={[APP_STYLES.rowContainer]}>
                     <Button
@@ -225,19 +259,19 @@ const Home = ({
                         {isRunning
                             ? <View style={styles.loadingContainer}>
                                 <Loading containerStyle={styles.loading} />
-                                <Heading3 style={styles.loadingLabel}>STOP</Heading3>
+                                <Heading3 style={[styles.submitLabel, styles.loadingLabel]}>STOP</Heading3>
                             </View>
-                            : <Heading3 style={styles.loadingLabel}>{message.submitTitle}</Heading3>}
+                            : <Heading3 style={styles.submitLabel}>{message.submitTitle}</Heading3>}
                     </Button>
-                    <Button
+                    {/* <Button
                         type={ButtonType.info}
                         containerStyle={styles.saveContainer}
                         onPress={onSave}
                     >
                         <Icon name="save" style={styles.saveIcon} />
-                    </Button>
+                    </Button> */}
                 </View>
-            </ScrollView>
+            </View>
 
             <ExecutingNoti
                 type={executingMessageType}

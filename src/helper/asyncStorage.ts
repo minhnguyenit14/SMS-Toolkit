@@ -8,6 +8,7 @@ import { RegexFlagType } from '@containers/Home/components/RegexFlagsBtn';
 export type CrawlConfig = {
     keyword: string,
     api: string,
+    secretKey: string,
     minDate: number,
     filterType: FilterType,
     regexFlags: Array<RegexFlagType>,
