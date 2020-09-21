@@ -10,17 +10,17 @@ import React from 'react';
 import {
   StyleSheet,
   StatusBar,
-  View,
-  Text
+  View
 } from 'react-native';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import RootStackScreen from './navigation';
 import { FlashMessage } from './helper';
+import config from '@config';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fafafa',
+    backgroundColor: config.colors.background,
     flex: 1
   }
 })

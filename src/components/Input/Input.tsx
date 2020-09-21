@@ -16,7 +16,7 @@ import config from '@config';
 
 const styles = StyleSheet.create({
     containerStyle: {
-        overflow: 'hidden'
+        overflow: 'hidden',
     },
     labelContainer: {
         ...APP_STYLES.rowContainer,

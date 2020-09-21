@@ -13,6 +13,7 @@
     "@react-native-community/async-storage": "^1.11.0",
     "@react-native-community/blur": "^3.6.0",
     "@react-native-community/masked-view": "^0.1.10",
+    "@react-native-community/netinfo": "^5.9.7",
     "@react-navigation/native": "^5.7.3",
     "@react-navigation/stack": "^5.9.0",
     "@types/react-native-indicators": "^0.16.0",

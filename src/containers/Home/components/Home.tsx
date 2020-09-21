@@ -40,11 +40,11 @@ export interface HomeComponentProps {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 15
+        padding: 15,
+        backgroundColor: config.colors.background
     },
     content: {
         flexGrow: 1,
-        justifyContent: 'space-between',
         marginBottom: 15
     },
     copyrightContainer: {
@@ -97,6 +97,7 @@ const styles = StyleSheet.create({
     },
     btn: {
         flex: 1,
+        borderRadius: 0,
     },
     helpContainer: {
         backgroundColor: 'transparent',
@@ -123,7 +124,13 @@ const styles = StyleSheet.create({
     loading: {
         position: 'absolute'
     },
+    submitBtn: {
+        backgroundColor: config.colors.background,
+        margin: -15,
+        elevation: 5
+    },
     submitLabel: {
+        fontSize: 24,
         textAlign: 'center',
         color: config.colors.logo.background
     },
@@ -250,7 +257,7 @@ const Home = ({
                 </ScrollView>
 
                 {isRunning && <View style={styles.runningMask} />}
-                <View style={[APP_STYLES.rowContainer]}>
+                <View style={[APP_STYLES.rowContainer, styles.submitBtn]}>
                     <Button
                         containerStyle={styles.btn}
                         onPress={onSubmit}

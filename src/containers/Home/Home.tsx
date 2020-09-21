@@ -4,7 +4,7 @@ import SmsListener, { ReceivedSmsMessage } from 'react-native-android-sms-listen
 
 import { callAPIFilteredByKeyword, callAPIFilteredByRegex } from '@helper/sms';
 import { handleSmsPermissionAndroid, showFlashMessage } from '@helper';
-import { getCrawlConfig, setCrawlConfig, clearAsyncStorage } from '@helper/asyncStorage';
+import { getCrawlConfig, setCrawlConfig } from '@helper/asyncStorage';
 import message from './home.json';
 import { modalStackRoutes } from '@navigation/appRoutes';
 import { HomeComponent, HelperContent } from './components';
@@ -13,8 +13,14 @@ import { FilterType, HELPER_NOTES, HELPER_CONTENT, PROTOCOL_PICKER_DATA, REGEX_F
 import { ScreenOptions } from '@navigation';
 import { RegexFlagType } from './components/RegexFlagsBtn.js';
 import { ExecutingNotiType } from './components/ExecutingNoti';
+import { AxiosError } from 'axios';
+import { retryAction, RetryActionType } from '../../helper/retryAction';
+
+import appConfig from '@config';
 
 const Home = ({ navigation, route }: ScreenOptions) => {
+    const retryActions: RetryActionType[] = [];
+
     const [smsListener, setSmsListener] = useState();
     const [canceler, setCanceler] = useState<Array<Function>>([]);
 
@@ -24,7 +30,7 @@ const Home = ({ navigation, route }: ScreenOptions) => {
     const [isExecutingMessage, setExecutingMessage] = useState(false);
     const [executingMessageType, setExecutingMessageType] = useState<ExecutingNotiType>("");
 
-    const [isSmsPremissionGranted, setSmsPremissionGranted] = useState(false);
+    const [isSmsPermissionGranted, setSmsPermissionGranted] = useState(false);
     const [config, setConfig] = useState({
         api: "",
         keyword: "",
@@ -41,6 +47,7 @@ const Home = ({ navigation, route }: ScreenOptions) => {
         init();
         return () => {
             smsListener && smsListener.remove();
+            retryActions.map(retryAction => retryAction.cancel);
         }
     }, []);
 
@@ -52,7 +59,7 @@ const Home = ({ navigation, route }: ScreenOptions) => {
 
     async function checkPermissions() {
         const isGrantedSmsPermissionAndroid = await handleSmsPermissionAndroid();
-        setSmsPremissionGranted(isGrantedSmsPermissionAndroid);
+        setSmsPermissionGranted(isGrantedSmsPermissionAndroid);
 
         return isGrantedSmsPermissionAndroid;
     }
@@ -79,39 +86,49 @@ const Home = ({ navigation, route }: ScreenOptions) => {
         return config.protocol + config.api;
     }
 
+    function callAPI(smsMessage: ReceivedSmsMessage, isRetry = false) {
+        switch (config.filterType) {
+            case FilterType.keyword:
+                callAPIFilteredByKeyword(
+                    getAPI(),
+                    config.keyword,
+                    smsMessage,
+                    config.secretKey,
+                    handleCancelable,
+                    handlePreExecuteAPI,
+                    handleSuccessExecutingMessage,
+                    (message: string) =>
+                        handleFailExecutingMessage(message, smsMessage, isRetry),
+                    handleFinallyExecutingMessage
+                );
+                break;
+            case FilterType.regex:
+                callAPIFilteredByRegex(
+                    getAPI(),
+                    config.keyword,
+                    config.regexFlags.join(""),
+                    smsMessage,
+                    config.secretKey,
+                    handleCancelable,
+                    handlePreExecuteAPI,
+                    handleSuccessExecutingMessage,
+                    (message: string) =>
+                        handleFailExecutingMessage(message, smsMessage, isRetry),
+                    handleFinallyExecutingMessage
+                );
+                break;
+        }
+    }
+
+    // function retryAction(smsMessage: ReceivedSmsMessage){
+
+    // }
+
     function startSmsListener() {
         smsListener && smsListener.remove();
         const listener = SmsListener.addListener(async (message: ReceivedSmsMessage) => {
             setPostedMessage("");
-            switch (config.filterType) {
-                case FilterType.keyword:
-                    callAPIFilteredByKeyword(
-                        getAPI(),
-                        config.keyword,
-                        message,
-                        config.secretKey,
-                        handleCancelable,
-                        handlePreExecuteAPI,
-                        handleSuccessExecutingMessage,
-                        handleFailExecutingMessage,
-                        handleFinallyExecutingMessage
-                    );
-                    break;
-                case FilterType.regex:
-                    callAPIFilteredByRegex(
-                        getAPI(),
-                        config.keyword,
-                        config.regexFlags.join(""),
-                        message,
-                        config.secretKey,
-                        handleCancelable,
-                        handlePreExecuteAPI,
-                        handleSuccessExecutingMessage,
-                        handleFailExecutingMessage,
-                        handleFinallyExecutingMessage
-                    );
-                    break;
-            }
+            callAPI(message);
             console.log(message);
         });
         setSmsListener(listener);
@@ -138,12 +155,22 @@ const Home = ({ navigation, route }: ScreenOptions) => {
         setExecutingMessageType("success");
     }
 
-    function handleFailExecutingMessage(mess: string) {
+    function handleFailExecutingMessage(mess: string, smsMessage: ReceivedSmsMessage, isRetry: boolean) {
         setPostedMessage(mess);
         setExecutingMessageType("error");
+        if (!isRetry) {
+            handleRetryCallAPI(smsMessage);
+        }
+    }
+
+    function handleRetryCallAPI(mess: ReceivedSmsMessage) {
+        retryActions.push(retryAction((time: number) => {
+            callAPI(mess, true);
+        }, 3, appConfig.retryInterval));
     }
 
     function handleFinallyExecutingMessage() {
+
         setTimeout(() => {
             setExecutingMessage(false);
         }, 3000);
@@ -279,11 +306,11 @@ const Home = ({ navigation, route }: ScreenOptions) => {
     }
 
     function handleSubmit() {
-        if (isSmsPremissionGranted === null) {
+        if (isSmsPermissionGranted === null) {
             Linking.openSettings();
             return;
         }
-        if (isSmsPremissionGranted) {
+        if (isSmsPermissionGranted) {
             if (!isRunning) {
                 handleSaveConfig();
                 startSmsListener();
