@@ -36,6 +36,7 @@ const App = () => {
         <FlashMessage
           // @ts-ignore
           icon="auto"
+          position="bottom"
           titleProps={{ numberOfLines: 5 }}
         />
       }

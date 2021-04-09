@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# your target file
+CONFIG=./node_modules/react-native-android-sms-listener/android/src/main/java/com/centaurwarchief/smslistener/SmsListenerModule.java
+
+# comment target
+comment() {
+sed -i.bak '0,/re/unregisterReceiver(mReceiver);/{s/unregisterReceiver(mReceiver);/\/\/unregisterReceiver(mReceiver);/}' abc.java
+}
+
+# comment target
+uncomment() {
+  echo $1
+  sed -i '' "s/^#$1/$1/" $CONFIG
+}
+
+
+# Use it so:
+# uncomment 58
+comment
